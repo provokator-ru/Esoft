@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="034706c278b344d794677297dd27d9e0" Name="Diagram1">
+        <EntityTypeShape EntityType="z4_train_SokolovModel.Executor" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.Manager" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.Task" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.TaskStatus" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.TaskWorkType" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SokolovModel.User" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="z4_train_SokolovModel.executors_fk0" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SokolovModel.FK_Executor_User" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SokolovModel.tasks_fk0" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SokolovModel.FK_Manager_User" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SokolovModel.FK_Task_TaskStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SokolovModel.FK_Task_TaskWorkType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
