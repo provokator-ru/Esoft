@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Esoft"
         mc:Ignorable="d"
-        Title="Esoft" Height="450" Width="800" MinWidth="800" MinHeight="450">
+        Title="Esoft" Height="450" Width="900" MinWidth="900" MinHeight="450">
     <Grid>
         <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>

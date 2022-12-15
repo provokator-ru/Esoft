@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\dimas\Desktop\Учёба\МДК 07.01\z4_train_Sokolov\Esoft\Esoft\AppDataFile\EsoftModel.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\dimas\Desktop\Учёба\МДК 07.01\Esoft\Esoft\AppDataFile\ModelEsoft.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

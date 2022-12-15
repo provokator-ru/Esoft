@@ -76,41 +76,41 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AppDataFile\EsoftModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EsoftModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppDataFile\EsoftModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EsoftModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppDataFile\EsoftModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EsoftModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="AppDataFile\Executor.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\Manager.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelEsoft.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEsoft.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelEsoft.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelEsoft.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEsoft.edmx</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\sysdiagrams.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\Task.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\TaskStatus.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\TaskWorkType.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataFile\User.cs">
-      <DependentUpon>EsoftModel.tt</DependentUpon>
+      <DependentUpon>ModelEsoft.tt</DependentUpon>
     </Compile>
     <Compile Include="Helper\HelpManager.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -118,6 +118,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\Autorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageAddExecutor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +133,9 @@
   <ItemGroup>
     <Compile Include="Pages\Autorization.xaml.cs">
       <DependentUpon>Autorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageAddExecutor.xaml.cs">
+      <DependentUpon>PageAddExecutor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageExecutor.xaml.cs">
       <DependentUpon>PageExecutor.xaml</DependentUpon>
@@ -150,12 +157,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="AppDataFile\EsoftModel.edmx">
+    <EntityDeploy Include="AppDataFile\ModelEsoft.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EsoftModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelEsoft.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="AppDataFile\EsoftModel.edmx.diagram">
-      <DependentUpon>EsoftModel.edmx</DependentUpon>
+    <None Include="AppDataFile\ModelEsoft.edmx.diagram">
+      <DependentUpon>ModelEsoft.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,15 +183,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppDataFile\EsoftModel.Context.tt">
+    <Content Include="AppDataFile\ModelEsoft.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EsoftModel.edmx</DependentUpon>
-      <LastGenOutput>EsoftModel.Context.cs</LastGenOutput>
+      <DependentUpon>ModelEsoft.edmx</DependentUpon>
+      <LastGenOutput>ModelEsoft.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="AppDataFile\EsoftModel.tt">
+    <Content Include="AppDataFile\ModelEsoft.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EsoftModel.edmx</DependentUpon>
-      <LastGenOutput>EsoftModel.cs</LastGenOutput>
+      <DependentUpon>ModelEsoft.edmx</DependentUpon>
+      <LastGenOutput>ModelEsoft.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

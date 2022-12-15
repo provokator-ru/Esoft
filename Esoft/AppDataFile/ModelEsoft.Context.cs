@@ -13,19 +13,18 @@ namespace Esoft.AppDataFile
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class z4_train_SokolovEntities1 : DbContext
+    public partial class z4_train_SokolovEntities2 : DbContext
     {
-        private static z4_train_SokolovEntities1 _context;
-
-        public z4_train_SokolovEntities1()
-            : base("name=z4_train_SokolovEntities1")
+        private static z4_train_SokolovEntities2 _context;
+        public z4_train_SokolovEntities2()
+            : base("name=z4_train_SokolovEntities2")
         {
         }
 
-        public static z4_train_SokolovEntities1 GetContext()
+        public static z4_train_SokolovEntities2 GetContext()
         {
             if (_context == null)
-                _context = new z4_train_SokolovEntities1();
+                _context = new z4_train_SokolovEntities2();
 
             return _context;
         }

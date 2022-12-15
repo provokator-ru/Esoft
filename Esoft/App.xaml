@@ -34,7 +34,7 @@
         
         <Style TargetType="TextBlock" x:Key="titleTxtb">
             <Setter Property="Width" Value="800"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="25"/>
@@ -44,7 +44,7 @@
         
         <Style TargetType="TextBlock" x:Key="stateTxtb">
             <Setter Property="Width" Value="300"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -54,7 +54,7 @@
         
         <Style TargetType="TextBlock" x:Key="firsETxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -64,7 +64,7 @@
         
         <Style TargetType="TextBlock" x:Key="midleETxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -74,7 +74,7 @@
         
         <Style TargetType="TextBlock" x:Key="lastETxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -84,7 +84,7 @@
 
         <Style TargetType="TextBlock" x:Key="firsMTxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -94,7 +94,7 @@
         
         <Style TargetType="TextBlock" x:Key="midleMTxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -104,7 +104,7 @@
         
         <Style TargetType="TextBlock" x:Key="lastMTxtb">
             <Setter Property="Width" Value="250"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="17"/>
@@ -114,22 +114,22 @@
 
         <Style TargetType="Button" x:Key="redactBtn">
             <Setter Property="Width" Value="200"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="Foreground" Value="#FF243238"/>
             <Setter Property="Background" Value="#00d9bb"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="30"/>
             <Setter Property="Margin" Value="0 0 0 -170"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
         </Style>
 
         <Style TargetType="Button" x:Key="DeleteBtn">
             <Setter Property="Width" Value="200"/>
-            <Setter Property="FontFamily" Value="Tahoma"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="Foreground" Value="#FF243238"/>
             <Setter Property="Background" Value="#00d9bb"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="30"/>
             <Setter Property="Margin" Value="250 0 0 -170"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
         </Style>

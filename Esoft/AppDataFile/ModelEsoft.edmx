@@ -361,7 +361,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="z4_train_SokolovEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="z4_train_SokolovEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Executor" EntityType="Self.Executor" />
           <EntitySet Name="Manager" EntityType="Self.Manager" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
@@ -399,7 +399,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище z4_train_SokolovModelContainer" CdmEntityContainer="z4_train_SokolovEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище z4_train_SokolovModelContainer" CdmEntityContainer="z4_train_SokolovEntities2">
           <EntitySetMapping Name="Executor">
             <EntityTypeMapping TypeName="z4_train_SokolovModel.Executor">
               <MappingFragment StoreEntitySet="Executor">

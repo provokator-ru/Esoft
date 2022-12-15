@@ -5,20 +5,32 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Esoft.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="900"
       Title="PageExecutor">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Source="/Resources/logo.png" HorizontalAlignment="Left" Margin="20,0,0,0" Grid.Row="0"/>
-        <Label Content="Список для исполнителей" Grid.Row="0" Foreground="#FF243238" FontSize="25" HorizontalAlignment="Center"></Label>
         <Button Name="ButtonnBack" Click="ButtonBack_Click" 
                 Content="Назад"
                 HorizontalAlignment="Right" Margin="14"></Button>
-        <ListView Grid.Row="1" Name="LViewExecutor" >
+        <Button Name="ButtonAdd" Click="ButtonAdd_Click" Content="Добавить"
+                HorizontalAlignment="Right" Margin="0,0,250,0" ></Button>
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите название для поиска: " Width="175" TextAlignment="Right"></TextBlock>
+                <TextBox Width="225" Name="TBoxSearch" TextChanged="TBoxSearch_TextChanged"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Выберите тип: " Width="175" TextAlignment="Right"></TextBlock>
+                <ComboBox Width="225" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="Status"></ComboBox>
+            </StackPanel>
+        </WrapPanel>
+        <ListView Grid.Row="2" Name="LViewExecutor" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="20" Width="800" Height="200">
@@ -43,7 +55,7 @@
                         <TextBlock Text="{Binding Executor.User.LastName}"
                                    Style="{StaticResource lastMTxtb}"></TextBlock>
                         <!--ButtonCRUD-->
-                        <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click_1"
+                        <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"
                                   Style="{StaticResource redactBtn}"></Button>
                         <Button Content="Удалить" Name="BtnDelete" Click="BtnDelete_Click"
                                   Style="{StaticResource DeleteBtn}"></Button>
